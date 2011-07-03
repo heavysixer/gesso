@@ -46,6 +46,6 @@ h3. Screen Shots
 
 Here are a couple screenshots showing Gesso running in the browser and on the iphone.
 
-!/screenshots/browser.jpg!
-!/screenshots/iphone.png!
+!http://github.com/heavysixer/gesso/blob/master/screenshots/browser.jpg!
+!http://github.com/heavysixer/gesso/blob/master/screenshots/iphone.png!
 
