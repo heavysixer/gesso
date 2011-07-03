@@ -25,7 +25,7 @@ h3. Ready Set Gesso
 
 Essentially, your game logic is defined as a cart which Gesso loads during runtime. The cart will extend the Gesso Cart class, which affords it some nice helpers like loading remote assets and assigning them as sprites. Once you have your cart written you just load it with Gesso at runtime like this:
 
-@$(document).ready(function() {
+bc.. $(document).ready(function() {
   GC = new Gesso({
     canvas : $("#canvas")
   });
@@ -36,7 +36,7 @@ Essentially, your game logic is defined as a cart which Gesso loads during runti
   CART.server = NODE_SERVER;
 
   GC.loadCart(CART);
-});@
+});
 
 h3. More To Come
 
