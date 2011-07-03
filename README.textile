@@ -46,6 +46,9 @@ h3. Screen Shots
 
 Here are a couple screenshots showing Gesso running in the browser and on the iphone.
 
+**Please note that while the Gesso is released under MIT the screenshots are copyright protected.**
+**© 2011 "Humansized":http://www.humansized.com Inc. All rights reserved**
+
 !https://github.com/heavysixer/gesso/raw/master/screenshots/browser.jpg!
 !https://github.com/heavysixer/gesso/raw/master/screenshots/iphone.png!
 
