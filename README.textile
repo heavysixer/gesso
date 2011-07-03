@@ -3,3 +3,48 @@ h2. Gesso A Lightweight HTML5 Canvas-based Game Framework
 bq. Gesso (Italian:ˈdʒɛsːo "chalk," from the Latin gypsum, from the Greek γύψος) is a white paint mixture consisting of a binder mixed with chalk, gypsum, pigment, or any combination of these. It is used in artwork as a preparation for any number of substrates such as wood panels, canvas and sculpture as a base for paint and other materials that are applied over it.
 
 ??"wikipedia":http://en.wikipedia.org/wiki/Gesso??
+
+h3. What Gesso Is & Isn't
+
+In painting Gesso is meant to prime the canvas so that it is ready to accept paint easier and also make colors brighter and more vibrant. It enhances the final product but is not supposed to be visible in the final product. This has been the metaphor that has guided me through the development of this framework. Unlike many game frameworks Gesso is not a monolithic framework that includes engines for every type of game ever invented. It is instead a micro-framework meant to be easy to learn and extend, with only the essentials already cooked into the code.
+
+I developed Gesso for my as yet unreleased Facebook game, which I have included in the screenshots to show off some of the capabilities of the library.
+
+h3. Gesso Includes
+
+* A game loading mechanism (Called a Cart)
+* A Sound manager
+* A Remote Asset Loader
+* A Way to talk to a websocket or long-polling interface
+* Frame Rate Monitor
+* Sprite Library
+* Countdown Timer
+
+
+h3. Ready Set Gesso
+
+Essentially, your game logic is defined as a cart which Gesso loads during runtime. The cart will extend the Gesso Cart class, which affords it some nice helpers like loading remote assets and assigning them as sprites. Once you have your cart written you just load it with Gesso at runtime like this:
+
+@code@
+$(document).ready(function() {
+  GC = new Gesso({
+    canvas : $("#canvas")
+  });
+  CART.remoteAssets = [
+  {name: 'background', src : 'http://www.myserver.com/background.png'},
+  {name: 'foreground', src : 'http://www.myserver.com/foreground.png'},
+  ];
+  CART.server = NODE_SERVER;
+
+  GC.loadCart(CART);
+});
+
+h3. More To Come
+
+I realize that this is hardly enough documentation to do much of anything useful with this library. I will continue to make updates as I unpack the specifics of my game into a general template for others to use.
+
+h3. Screen Shots
+
+Here are a couple screenshots showing Gesso running in the browser and on the iphone.
+
+
